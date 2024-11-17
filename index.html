@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JokeAPI - Chistes</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    
+    <!-- Selector de idioma -->
+     <div class="filtro">
+        <h1>Listo para reirte?</h1>
+    <label for="language">Elige un idioma:</label>
+    <select id="language">
+        <option value="en">Inglés</option>
+        <option value="es">Español</option>
+        <option value="de">Alemán</option>
+        <option value="fr">Francés</option>
+    </select>
+    <br>
+    <button onclick="obtenerChiste()">Dame un chiste</button>
+</div>
+    <div id="jokeContainer" class="oculto"></div>
+
+    <script src="script.js"></script>
+</body>
+</html>
